@@ -5,7 +5,7 @@ app.controller('homeCtrl', ['$scope', '$http', 'API', function($scope, $http, AP
 
   $http.get(API.url + '/links')
   .then(function(res) {
-    console.log('success:', res)
+    console.log('GET links successful:', res)
     $scope.bookmarks = res.data;
   })
   .catch(function(err) {

@@ -4,7 +4,8 @@
 <head>
   <title>AngularJS: UI-Router Quick Start</title>
   <!-- Bootstrap CSS -->
-  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,7 +13,7 @@
   <div class="container">
     <div class="navbar navbar-default">
       <div class="navbar-header">
-        <a ui-sref="home" class="navbar-brand">Home</a>
+        <a ui-sref="home" class="navbar-brand">Bookmarks</a>
       </div>
       <div class="navbar-collapse">
         <ul class="nav navbar-nav">
@@ -22,23 +23,22 @@
       </div>
     </div>
     <div class="row">
-      <div class="span12">
-        <div class="well" ui-view></div>
-      </div>
+      <div class="well" ui-view></div>
     </div>
   </div>
-
   <!-- Angular -->
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
   <!-- UI-Router -->
   <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
   <!-- App Script -->
-  <script src="js/app.js"></script>
+  <script src="dist/bundle.js"></script>
+  <!-- <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
   <script src="js/homeCtrl.js"></script>
   <script src="js/tagsCtrl.js"></script>
   <script src="js/tagCtrl.js"></script>
   <script src="js/editCtrl.js"></script>
-  <script src="js/newCtrl.js"></script>
+  <script src="js/newCtrl.js"></script> -->
 </body>
 
 </html>

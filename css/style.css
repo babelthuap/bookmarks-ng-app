@@ -1,7 +1,20 @@
-th.tagColumn {
-  width: 20%;
+th.tagColumn, th.linkColumn {
+  width: 25%;
 }
 
 .highlight {
   font-style: italic;
+}
+
+button.bm-edit,
+button.bm-del {
+  padding: 3px;
+}
+
+button.bm-del:hover {
+  color: red;
+}
+
+button.bm-edit:hover {
+  color: green;
 }
