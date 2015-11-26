@@ -1,1 +1,16 @@
-<h1>HOME</h1>
+<h1>BOOKMARKS</h1>
+
+<table class="table table-striped">
+  <thead>
+    <th>Link</th>
+    <th>Tags</th>
+  </thead>
+  <tbody>
+    <tr ng-repeat="b in bookmarks">
+      <td><a ng-href={{b.url}}>{{b.title}}</a></td>
+      <td>
+        <span ng-repeat="t in b.tags">{{t.name}}</span>
+      </td>
+    </tr>
+  </tbody>
+</table>

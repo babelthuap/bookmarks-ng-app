@@ -1,0 +1,21 @@
+<h1>TAGS</h1>
+
+<table class="table table-striped table-bordered" ng-init="init()">
+  <thead>
+    <th class="tagColumn">Tag</th>
+    <th>Links</th>
+  </thead>
+  <tbody>
+    <tr ng-repeat="t in tags track by $index">
+      <td>
+        <span ng-class="{highlight: t.links.length === 0}">{{t.name}}</span>
+        <button class="close" ng-show="t.links.length === 0" ng-click="delete(t._id, $index)">&times;</button>
+      </td>
+      <td>
+        <span ng-repeat="l in t.links">
+          <a ng-href={{l.url}}>{{l.title}}</a>
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -2,6 +2,10 @@
 
 var app = angular.module('bookmarkApp', ["ui.router"])
 
+app.constant('API', {
+  url: 'https://aleksey-nicholas-bookmarks.herokuapp.com'
+})
+
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise("/")
   
